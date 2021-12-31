@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import Navbar from '../components/navbar';
+import Sidebar from '../components/sidebar';
 import Hero from '../components/hero';
 import sliderData from '../data/SliderData';
-import Sidebar from '../components/sidebar';
+import Info from '../components/info';
+import { infoData } from '../data/InfoData';
+
 
 function Home() {
         const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +19,7 @@ function Home() {
             <Navbar toggle={toggle} />
             <Sidebar isOpen={isOpen}  toggle={toggle} />
             <Hero slides={sliderData} />
+            <Info {...infoData} />
         </>
     )
 }
