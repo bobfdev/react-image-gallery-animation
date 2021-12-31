@@ -49,6 +49,11 @@ export const NavMenu = styled.div`
 
 export const NavMenuLinks = styled(Link)`
     ${NavLink}
+
+    &:hover {
+        color: #cd853f;
+        transform: scale(1.2);
+    }
 `;
 
 export const NavBtn = styled.div`
